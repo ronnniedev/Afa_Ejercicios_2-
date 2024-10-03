@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Filmoteca</string>
+    <string name="creadora">Creado por Andrea</string>
+    <string name="boton_uno">Ir al sitio web</string>
+    <string name="boton_dos">Obtener soporte</string>
+    <string name="boton_tres">Volver</string>
+    <string name="saludo">Saludo Activity</string>
+    <string name="boton_web">Ir a la página web</string>
+</resources>

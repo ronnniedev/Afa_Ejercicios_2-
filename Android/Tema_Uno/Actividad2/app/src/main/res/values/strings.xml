@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Actividad dos</string>
+    <string name="boton_uno">Me presento</string>
+    <string name="saludo">Bona sera</string>
+    <string name="volver">Return</string>
+    <string name="entrada">Escribe aqui</string>
+    <string name="web">Go to website</string>
+    <string name="soporte">Get support</string>
+    <string name="link">https://www.ocinepremiumlosfresnos.es/</string>
+</resources>

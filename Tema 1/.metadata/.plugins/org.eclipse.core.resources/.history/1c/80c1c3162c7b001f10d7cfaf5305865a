@@ -1,0 +1,20 @@
+package ejemploClase;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Agenda {
+	
+	private Map<Dni,Persona>personas;
+
+	public Agenda() {
+		
+		this.personas = new HashMap <Dni,Persona>();
+	}
+	
+	public void addPersona(Persona p) {
+		personas.put(p.getDni(), p);
+	}
+
+	
+}

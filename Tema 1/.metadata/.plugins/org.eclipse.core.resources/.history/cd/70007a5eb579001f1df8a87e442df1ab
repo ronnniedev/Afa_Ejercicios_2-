@@ -1,0 +1,29 @@
+package ejercicio3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Login l = new Login();
+		nuevaCuenta(l,"mi2u","womeni");
+		nuevaCuenta(l,"miao","women2i");
+		
+		
+		l.mostrarCuentas();
+		
+
+	}
+	
+	public static void nuevaCuenta(Login l,String user,String password) {
+		
+		try {
+			l.nuevoRegistro(user, password);
+		} catch (IncorrectFormatException e) {
+			System.out.println(e.getMessage());
+		} catch (AlreadyRegisteredException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

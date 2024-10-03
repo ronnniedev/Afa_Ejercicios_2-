@@ -1,0 +1,21 @@
+-Ejercicio1
+
+Try:44
+Finally:45
+Return:46
+
+-Ejercicio2
+
+try: 1 Error
+catch: 43
+finally: 44
+return: 45
+
+-Ejercicio3
+
+try: 1 Error
+finally: 2
+
+-Ejercicio4
+Try: Error
+Finally: 2

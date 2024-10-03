@@ -1,0 +1,19 @@
+package persistencia;
+
+
+
+public class FicherosCsv {
+	
+	public boolean cargarFichero(String nombreFichero) {
+		Buffer buffer= null;
+		
+		buffer = new BufferedReader(new FileReader (nombreFichero));
+		String linea = "";
+		
+		while ((linea.buffer.readLine() != null)) {
+			System.out.println("Linea: "+linea);
+		}
+		
+		
+	}
+}

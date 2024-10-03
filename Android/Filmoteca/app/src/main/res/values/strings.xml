@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Filmoteca</string>
+    <string name="creadora">Created by Andrea</string>
+    <string name="boton_uno">Go to website</string>
+    <string name="boton_dos">Support</string>
+    <string name="boton_tres">Return</string>
+    <string name="saludo">Saludo Activity</string>
+    <string name="boton_web">Website</string>
+</resources>

@@ -1,0 +1,21 @@
+package ejercicio1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int valor = 0;
+		
+		try {
+			valor = valor + Integer.parseInt("A");
+		}catch(Exception e) {
+			valor = valor + Integer.parseInt("A");
+			System.out.println(e.getMessage());
+			
+		}finally {
+			System.out.println("Pipo");
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package interfaz;
+
+import java.io.File;
+
+import persistencia.FicherosCsv;
+
+public class Main {
+
+	public static void main(String[] args) {
+		FicherosCsv lectura = new FicherosCsv();
+		File f = new File("..//ficheros//prueba.csv");
+		System.out.println(f.getAbsolutePath());
+		
+
+	}
+
+}

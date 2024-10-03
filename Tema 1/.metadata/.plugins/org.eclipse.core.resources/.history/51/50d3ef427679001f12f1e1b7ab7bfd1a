@@ -1,0 +1,12 @@
+package ejercicio3;
+
+public class Usuario {
+	
+	private User usuario;
+	private String Contraseña;
+	
+	
+	
+	
+
+}

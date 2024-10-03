@@ -1,0 +1,97 @@
+package ejercicio2;
+
+public class Habitacion implements Comparable{
+	
+	private String piso;
+	private int precio;
+	private TipoHabitacion tipo;
+	private boolean disponible;
+	
+	
+	
+	public Habitacion(String piso,TipoHabitacion tipo, boolean disponible) {
+		this.piso = piso;
+		this.tipo = tipo;
+		this.precio = asignarPrecio();
+		this.disponible = disponible;
+	}
+	
+	public int asignarPrecio() {
+		int precio = 0;
+		if(this.tipo == TipoHabitacion.DOBLE) {
+			precio = 300;
+		}else if(this.tipo == TipoHabitacion.MATRIMONIAL) {
+			precio = 200;
+		}else{
+			precio = 100;
+		}
+		
+		return precio;
+	}
+
+
+	public String getPiso() {
+		return piso;
+	}
+
+
+	public void setPiso(String piso) {
+		this.piso = piso;
+	}
+
+
+	public int getPrecio() {
+		return precio;
+	}
+
+
+	public void setPrecio(int precio) {
+		this.precio = precio;
+	}
+
+
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
+
+
+	public TipoHabitacion getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(TipoHabitacion tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+
+	
+
+	@Override
+	public String toString() {
+		return "Habitacion [piso=" + piso + ", precio=" + precio 
+				+ ", tipo=" + tipo + ", disponible=" + disponible
+				+ "]";
+	}
+
+
+	@Override
+	public int compareTo(Object o) {
+		Habitacion other = (Habitacion)o;
+		return other.piso.compareTo(this.piso);
+	}
+
+
+	
+	
+	
+	
+	
+
+}

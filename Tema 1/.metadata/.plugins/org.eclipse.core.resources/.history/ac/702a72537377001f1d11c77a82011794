@@ -1,0 +1,31 @@
+package ejercicio2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Telefono t1 = crearTelefono("987364789");
+		Telefono t2 = crearTelefono("987364a89");
+		Telefono t3 = crearTelefono("98736478");
+		Telefono t4 = crearTelefono("9873647899");
+		Telefono t5 = crearTelefono("987364788");
+		
+	
+
+	}
+	
+	public static Telefono crearTelefono(String numero) {
+		
+		
+		try {
+			 Telefono t = new Telefono (numero);
+			 return t;
+		} catch (TooLongException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return null;
+	}
+
+}

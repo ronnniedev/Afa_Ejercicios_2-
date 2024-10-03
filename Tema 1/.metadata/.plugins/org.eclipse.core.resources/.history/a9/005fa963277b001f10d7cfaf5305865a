@@ -1,0 +1,17 @@
+package ejemploClase;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Persona p1 = new Persona("123123123X","xxx");
+		Persona p2 = new Persona("123123123X","xxx");
+		
+		if(p1.equals(p2)==true) {
+			System.out.println("Son iguales");
+		}else {
+			System.out.println("Distintos");
+		}
+	}
+
+}

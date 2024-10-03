@@ -1,0 +1,15 @@
+package ejercicio6;
+
+import java.io.File;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		File f = new File("pruebas2");
+		System.out.println(f.getAbsolutePath());
+		f.mkdir();
+
+	}
+
+}

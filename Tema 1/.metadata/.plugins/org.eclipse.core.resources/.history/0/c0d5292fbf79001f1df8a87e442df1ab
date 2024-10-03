@@ -1,0 +1,66 @@
+package ejercicio4;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Gestor {
+	
+	Map <DireccionHTTP,Integer> direcciones;
+
+	public Gestor() {
+		this.direcciones = new HashMap<DireccionHTTP,Integer>();
+	}
+	
+	public void comprobarDireccion(String direccion) {
+		int contBarras = 0;
+		String servidor = "";
+		String puerto = "";
+		String recurso = "";
+		boolean hayPuerto = false;
+		boolean direccionCorrecta = false;
+		boolean puertoCorrecto = false;
+		
+		for(int i = 0; i < direccion.length();i++) {
+			if(direccion.charAt(i) == '/') {
+				contBarras++;
+			}
+			
+			if(contBarras > 2) {
+				if(direccion.charAt(i)== ':') {
+					direccionCorrecta = true;
+				}else if (!direccionCorrecta){
+					servidor += direccion.charAt(i);
+				}
+				
+				if(direccionCorrecta && Character.isDigit(direccion.charAt(i))) {
+					puerto += direccion.charAt(i);
+					hayPuerto = true;
+				}else if(direccionCorrecta) {
+					puertoCorrecto = true;
+					recurso += direccion.charAt(i);
+				}
+				
+				if(direccionCorrecta && puertoCorrecto) {
+					recurso += direccion.charAt(i);
+				}
+				
+			}
+			
+		}
+		
+		if(direccionCorrecta && puertoCorrecto) {
+			DireccionHTTP d = new DireccionHTTP(servidor,Integer.parseInt(puerto),recurso);
+			if(!direcciones.containsKey(d)) {
+				direcciones.put(d, 0);
+				System.out.println(d.toString());
+				System.out.println("Direccion añadida");
+			}
+			
+		}
+		
+		
+	}
+	
+	
+
+}

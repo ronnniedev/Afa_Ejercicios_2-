@@ -1,0 +1,24 @@
+package ejercicio3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Login l = new Login();
+		Cuenta c1 = nuevaCuenta("miau","womeni");
+		
+
+	}
+	
+	public Cuenta nuevaCuenta(String user,String password) {
+		
+		try {
+			return new Cuenta(user,password);
+		} catch (IncorrectFormatException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		return null;
+	}
+
+}

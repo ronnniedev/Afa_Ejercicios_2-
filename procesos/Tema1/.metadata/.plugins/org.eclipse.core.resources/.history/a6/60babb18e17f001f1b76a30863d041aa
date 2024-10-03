@@ -1,0 +1,13 @@
+package ficheros;
+
+public class Ejemplo4 {
+
+	public static void main(String[] args) {
+		
+		ProcessBuilder process = new ProcessBuilder("cmd", "/c", "DIR");
+		
+		
+
+	}
+
+}

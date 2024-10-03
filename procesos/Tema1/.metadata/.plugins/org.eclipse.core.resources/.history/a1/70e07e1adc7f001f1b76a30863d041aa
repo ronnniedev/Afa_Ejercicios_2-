@@ -1,0 +1,19 @@
+package ficheros;
+
+import java.io.IOException;
+
+public class GeneradorProceso {
+
+	public static void main(String[] args) {
+		
+		ProcessBuilder process = new ProcessBuilder("steam.exe");
+		
+		try {
+			process.start();
+		}catch(IOException e){
+			System.out.println("Ze murio");
+		}
+
+	}
+
+}
