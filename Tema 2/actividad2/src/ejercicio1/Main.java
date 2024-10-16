@@ -27,7 +27,7 @@ public class Main {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			System.out.println("Error en la lectura dle fichero");
+			System.out.println("Error en la lectura del fichero");
 		}
 		
 

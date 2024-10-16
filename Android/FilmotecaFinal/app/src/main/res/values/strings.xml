@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FilmotecaFinal</string>
+    <string name="boton_uno">Go to Website</string>
+    <string name="boton_dos">Support</string>
+    <string name="boton_tres">Go back</string>
+    <string name = "ver_pelicula">See movie</string>
+    <string name = "Acerca_de">About us</string>
+    <string name = "Guardar">Save</string>
+    <string name = "Cancelar">Cancel</string>
+    <string name = "Editar">Edit movie</string>
+    <string name = "VolverPrincipal">Return to principal</string>
+    <string name = "Creadora">Made by Veronica</string>
+    <string name="pelicula">Film</string>
+    <string name="Editando">Editing movie</string>
+</resources>

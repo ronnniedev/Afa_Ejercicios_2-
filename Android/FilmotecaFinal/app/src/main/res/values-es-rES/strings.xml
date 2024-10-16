@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FilmotecaFinal</string>
+    <string name="boton_uno">Ir a web</string>
+    <string name="boton_dos">Soporte</string>
+    <string name="boton_tres">Volver</string>
+    <string name = "ver_pelicula">Ver pelicula</string>
+    <string name = "Acerca_de">Acerca de</string>
+    <string name = "Guardar">Guardar</string>
+    <string name = "Cancelar">Cancelar</string>
+    <string name = "Editar">Editar pelicula</string>
+    <string name = "VolverPrincipal">Volver a pagina Principal</string>
+    <string name = "Creadora">Creado por Veronica</string>
+    <string name="pelicula">Pelicula</string>
+    <string name="Editando">Editando pelicula: </string>
+</resources>
