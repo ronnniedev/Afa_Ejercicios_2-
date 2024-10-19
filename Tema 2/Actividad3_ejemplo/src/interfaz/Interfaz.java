@@ -28,8 +28,8 @@ public class Interfaz {
         System.out.println("Listado de la informacion");
         System.out.println(concesionario.listarCoches());
         System.out.println("Listado marca seat");
-        System.out.println(concesionario.listarCochesPorMarca("seat"));
-        concesionario.guardarDatos(nombreFicheroDestino);
+        //System.out.println(concesionario.listarCochesPorMarca("seat"));
+        //concesionario.guardarDatos(nombreFicheroDestino);
     }
     public static void main(String[] args) {
         // TODO code application logic here
