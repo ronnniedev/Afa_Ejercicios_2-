@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="boton">Boton test</string>
+    <string name="volver">return</string>
 </resources>

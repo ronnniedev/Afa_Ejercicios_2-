@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;prueba.csv&apos; to &apos;EjemploProcesarDatos/src&apos;&#x0D;&#x0A;- Original project: &apos;actividad2&apos;&#x0D;&#x0A;- Destination element: &apos;EjemploProcesarDatos/src&apos;&#x0D;&#x0A;- Original element: &apos;prueba.csv&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=EjemploProcesarDatos/src" element1="src/ejemplos/prueba.csv" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1727864405535" units="0" version="1.0"/>
-</session>

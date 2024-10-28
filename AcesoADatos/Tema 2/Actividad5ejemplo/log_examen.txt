@@ -1,0 +1,11 @@
+1 : ERROR registro no identificado
+9 : ERROR registro no identificado
+11 : ERROR registro no identificado
+19 : ERROR registro no identificado
+36 : ERROR registro no identificado
+37 : ERROR registro no identificado
+38 : ERROR cod video duplicado
+39 : ERROR registro video incorrecto
+40 : ERROR registro video incorrecto
+41 : ERROR numero mal formado
+42 : ERROR registro no identificado

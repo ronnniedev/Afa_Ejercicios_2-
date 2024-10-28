@@ -7,11 +7,11 @@ import java.io.InputStreamReader;
 
 public class Funciones {
 
-	public static void lanzarPrograma(String parametro) {
+	public static Process lanzarPrograma(String parametro) {
 
 		ProcessBuilder process = new ProcessBuilder(parametro);
 
-		Process p;
+		Process p = null;
 
 		try {
 			p = process.start();
@@ -20,6 +20,7 @@ public class Funciones {
 			e.printStackTrace();
 		}
 
+		return p;
 	}
 
 	public static void lanzarComando(String comando,String atributo) {

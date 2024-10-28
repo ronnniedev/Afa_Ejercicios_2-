@@ -1,0 +1,31 @@
+1@1@L�pez L�pez@Jacinto@111111111
+1@2@Garc�a Mart�nez@Genaro@222222222
+1@3@S�ez Pintado@Ulises@985985985
+1@4@Arias S�nchez@Evangelina@916549816
+1@5@Adams@Eustaquia@919191919
+1@6@Rodriguez Jhonson@Jonathan@989898989
+1@7@Cuervo Negrete@Venancio@070707070
+1@9@Cuervo Cuervo@Cuervo@070707070
+2@1@2007@300@Zack Snyder
+2@2@1982@BLADE RUNNER@Ridley Scott
+2@3@1962@AGENTE 007 CONTRA DR. NO@Terence Young
+2@4@2006@El Laberinto del Fauno@Guillermo del Toro
+2@5@2009@�ngeles y demonios@Ron Howard
+2@6@2009@Millenium 1: Los hombres que no amaban a las mujeres@Niels Arden Oplev
+2@7@2009@Kika superbruja y el libro de hechizos@Stefan Ruzowitzky
+3@1@4
+3@1@1
+3@1@3
+3@2@1
+3@2@4
+3@3@1
+3@3@2
+3@3@3
+3@3@4
+3@4@1
+3@4@6
+3@4@5
+3@5@6
+3@5@2
+3@6@6
+3@7@7

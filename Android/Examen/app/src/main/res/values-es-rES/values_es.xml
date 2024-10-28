@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="bSaludo">Di hola</string>
+    <string name="eSaludo">Dime tu nombre</string>
+    <string name="email">Ir al email</string>
+</resources>

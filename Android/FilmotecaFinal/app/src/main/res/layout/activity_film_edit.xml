@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background = "@drawable/palomitas"
     tools:context=".FilmEditActivity">
 
     <ImageView
@@ -52,4 +53,15 @@
         android:text="@string/Editando"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/vueltas"
+        android:layout_width="406dp"
+        android:background="@color/white"
+        android:entries="@array/valores_spinner"
+        android:layout_height="81dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guardarFilm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

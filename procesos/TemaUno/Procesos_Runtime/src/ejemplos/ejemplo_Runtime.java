@@ -8,6 +8,7 @@ public class ejemplo_Runtime {
 		
 		// Runtime funciona igual que Process
 
+		
 		try {
 			Runtime.getRuntime().exec("Notepad.exe notas.txt");
 		} catch (IOException e) {

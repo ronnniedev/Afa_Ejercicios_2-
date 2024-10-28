@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/palomitas"
     tools:context=".FilmListActivity">
 
 
@@ -31,6 +32,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@color/white"
         android:text="@string/ver_pelicula"
         app:layout_constraintBottom_toTopOf="@+id/acercaDe"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,11 +55,22 @@
     <TextView
         android:id="@+id/warning"
         android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:layout_marginBottom="44dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/white"
         android:textAlignment="center"
         android:textColor="#F80505"
-        app:layout_constraintBottom_toTopOf="@+id/campo_texto"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="296dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acercaDe" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

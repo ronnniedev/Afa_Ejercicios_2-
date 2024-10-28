@@ -12,4 +12,9 @@
     <string name = "Creadora">Made by Veronica</string>
     <string name="pelicula">Film</string>
     <string name="Editando">Editing movie</string>
+    <string-array name="valores_spinner">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
 </resources>

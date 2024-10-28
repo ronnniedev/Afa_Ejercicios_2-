@@ -18,7 +18,6 @@ public class Ejercicio3 {
 		try {
 			Process p = process.start();
 
-			InputStream st = p.getInputStream();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			String linea;
 			while ((linea = reader.readLine()) != null) {

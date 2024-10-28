@@ -4,9 +4,13 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +18,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,6 +29,7 @@ public class FilmListActivity extends AppCompatActivity {
     private EditText contenedorTexto;
     private List<String> listFilms = Arrays.asList("regreso al futuro","el padrino");
     private TextView advertencia;
+    private ListView listView;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,6 +41,25 @@ public class FilmListActivity extends AppCompatActivity {
         botonVerPelicula = (Button) findViewById(R.id.verPelicula);
         contenedorTexto = (EditText) findViewById(R.id.campo_texto);
         advertencia = (TextView) findViewById(R.id.warning);
+        listView = (ListView) findViewById(R.id.lista);
+
+        ArrayList<String> list = new ArrayList<>();
+        list.addAll(Arrays.asList("Opcion 1","Opcion 2", "Opcion 3"));
+
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,list);
+
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String itemSeleccionado = (String) adapterView.getItemAtPosition(i);
+
+                Toast.makeText(FilmListActivity.this,itemSeleccionado
+                                , Toast.LENGTH_LONG).show();
+            }
+        });
 
         botonVerPelicula.setOnClickListener(new View.OnClickListener() {
             @Override

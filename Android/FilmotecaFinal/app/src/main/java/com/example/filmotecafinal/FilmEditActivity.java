@@ -4,8 +4,11 @@ import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +19,7 @@ public class FilmEditActivity extends AppCompatActivity {
     private Button botonCancelar;
     private ImageView imagenPelicula;
     private int drawableId;
+    private Spinner spinner;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +35,27 @@ public class FilmEditActivity extends AppCompatActivity {
         botonGuardar = (Button) findViewById(R.id.guardarFilm);
 
         imagenPelicula.setImageDrawable(getResources().getDrawable(bundle.getInt("imagen")));
+
+        spinner = (Spinner) findViewById(R.id.vueltas);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String itemSeleccionado = (String) adapterView.getItemAtPosition(i);
+
+                Toast.makeText(FilmEditActivity.this,itemSeleccionado
+                        , Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                Toast.makeText(FilmEditActivity.this,"nada"
+                        , Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+
 
         botonGuardar.setOnClickListener(new View.OnClickListener() {
             @Override

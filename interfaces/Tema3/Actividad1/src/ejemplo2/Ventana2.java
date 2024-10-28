@@ -16,8 +16,10 @@ public class Ventana2 extends Frame{
 	
 	public Ventana2(String titulo) {
 		super(titulo);
+		this.setBounds(300,400,300,200);
 		
 		this.setVisible(true);
+		this.setLayout(null);
 		// creo los componentes 
 		lnombre = new Label ("Nombre Empleado");
 		tnombre = new TextField(30);
@@ -32,9 +34,9 @@ public class Ventana2 extends Frame{
 		//posicionarlos
 		
 		this.lnombre.setBounds(100, 100, 200, 30);
-		this.tnombre.setBounds(100, 200, 100, 27);
-		this.bAceptar.setBounds(100, 250, 100, 27);
-		this.setBounds(300,400,300,200);
+		this.tnombre.setBounds(100, 300, 100, 27);
+		this.bAceptar.setBounds(100, 350, 100, 27);
+		
 	}
 	
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ejercicio4.Main"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="logica.Agenda"/>
-    <fullyQualifiedTypeName name="persistencia.Persistencia"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-</qualifiedTypeNameHistroy>

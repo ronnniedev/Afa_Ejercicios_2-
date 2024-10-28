@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/popitas">
 
     <EditText
         android:id="@+id/editarTexto"
@@ -21,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293" />
+        app:layout_constraintVertical_bias="0.293"
+        android:background="@color/white"/>
 
     <Button
         android:id="@+id/test"
@@ -32,5 +34,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editarTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/editarTexto"
+        android:background="#FFC0CB"/>
+
+    <SeekBar
+        android:id="@+id/barra"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="148dp"
+        android:background="@color/rosa"
+        android:max="200"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test"
+
+        />
+    <!-- android:thumb="@drawable/popitas" -->
+    <!-- hola -->
 </androidx.constraintlayout.widget.ConstraintLayout>
