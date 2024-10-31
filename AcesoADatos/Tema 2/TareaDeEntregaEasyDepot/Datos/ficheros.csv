@@ -1,0 +1,19 @@
+--Clientes--
+categoria;nombre;apellidos;numero;email;contraseña;numeroReservas;puntosTienda
+1;Diego ;De los Rios;123456789;email4;akjdhasd;0;0
+1;Luis;Ruiz;661588533;email3;pass11;5;0
+1;Marta;García;696183565;email2;pass14;5;0
+1;Marta;Martínez;678748433;email1;pass15;5;0
+1;Morgane ;Valiente;123456787;email6;sajdhkas;0;0
+1;Veronica;Gonzalez Bravo;123456789;email5;womani98;5;10
+--Consignas--
+categoria;id;direccion
+2;1;Calle Teodoro Cuesta
+2;3;Calle Martinez Sepia
+2;2;Calle Gutierrez Villa
+--Reservas--
+categoria;emailCliente;id;fechaInicio;fechaFinal;ReservaFinalizada;Incidencia;DescripcionIncidencia
+3;email1;1-1;Thu Oct 31 14:30:50 CET 2024;Thu Oct 31 14:31:19 CET 2024;true;false;Sin Incidencia
+3;email2;3-1;Thu Oct 31 14:31:00 CET 2024;NA;false;true;Mala pecoraThu Oct 31 14:31:46 CET 2024
+3;email3;2-1;Thu Oct 31 14:31:09 CET 2024;NA;false;false;Sin Incidencia
+3;email5;1-2;Thu Oct 31 16:42:49 CET 2024;Thu Oct 31 16:43:29 CET 2024;true;false;Sin Incidencia

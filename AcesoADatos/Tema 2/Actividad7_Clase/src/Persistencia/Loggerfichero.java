@@ -2,9 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package excepciones;
-
-
+package Persistencia;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,7 +18,8 @@ public class Loggerfichero {
         BufferedWriter buffer;
         private Loggerfichero() {
             try {
-                String rutafichero = System.getProperty("user.dir")+"\\datos";
+                String rutafichero = System.getProperty("user.dir")+"\\Datos\\";
+                System.out.println(rutafichero);
                 String ficheroLog=rutafichero+"log.txt";
                 // true añade al final
                 buffer = new BufferedWriter(new FileWriter(ficheroLog,true));

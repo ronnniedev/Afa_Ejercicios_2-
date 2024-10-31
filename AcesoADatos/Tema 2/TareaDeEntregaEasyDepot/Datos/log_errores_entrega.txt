@@ -1,3 +1,0 @@
-1 : Error cabecera mal hecha
-2 : Error cabecera mal hecha
-18 : Error cabecera mal hecha

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-import excepciones.Loggerfichero;
+import persistencia.Loggerfichero;
 import excepciones.LogicaException;
 import excepciones.PersistenciaException;
 import modelo.Empleado;

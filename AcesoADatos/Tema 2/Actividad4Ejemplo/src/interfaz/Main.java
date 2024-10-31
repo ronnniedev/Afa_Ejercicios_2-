@@ -7,7 +7,7 @@ import modelo.Inmueble;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import excepciones.Loggerfichero;
+import persistencia.Loggerfichero;
 import excepciones.LogicaException;
 import excepciones.PersistenciaException;
 

@@ -2,20 +2,32 @@ package Modelo;
 
 import java.util.Date;
 
+import Excepciones.PersistenciaException;
+
 public class Reserva {
 	
 	private String emailCliente;
-	private String idRserva;
-	private Date fechaInicio;
-	private Date fechaExtraccion;
+	private String idReserva;
+	private String fechaInicio;
+	private String  fechaExtraccion;
 	private Boolean reservaFinalizada;
 	private Boolean incidencia;
 	private String descripciónIncidencia;
 	
-	public Reserva(String emailCliente, String idRserva, Date fechaInicio, Date fechaExtraccion,
+	/**
+	 * Constructor de 7 parametros de la clase Reserva
+	 * @param emailCliente : String
+	 * @param idReserva : String
+	 * @param fechaInicio : String
+	 * @param fechaExtraccion : String
+	 * @param reservaFinalizada : Boolean
+	 * @param incidencia : Boolean
+	 * @param descripciónIncidencia : String
+	 */
+	public Reserva(String emailCliente, String idReserva, String fechaInicio, String fechaExtraccion,
 			Boolean reservaFinalizada, Boolean incidencia, String descripciónIncidencia) {
 		this.emailCliente = emailCliente;
-		this.idRserva = idRserva;
+		this.idReserva = idReserva;
 		this.fechaInicio = fechaInicio;
 		this.fechaExtraccion = fechaExtraccion;
 		this.reservaFinalizada = reservaFinalizada;
@@ -26,7 +38,23 @@ public class Reserva {
 	
 
 	/**
-	 * @return the emailCliente
+	 * Constructor de 2 parametros de clase Reserva
+	 * @param emailCliente : String
+	 * @param con : Consigna
+	 */
+	public Reserva(String emailCliente,Consigna con) {
+		this.emailCliente = emailCliente;
+		this.idReserva = con.getId() + "-" + (con.getNumeroReservas() + 1);
+		this.fechaInicio = new Date().toString();
+		this.fechaExtraccion = "NA";
+		this.reservaFinalizada = false;
+		this.incidencia = false;
+		this.descripciónIncidencia = "Sin Incidencia";
+	}
+
+	/**
+	 * Metodo get de emailCliente de la clase Reserva
+	 * @return emailCliente
 	 */
 	public String getEmailCliente() {
 		return emailCliente;
@@ -35,7 +63,8 @@ public class Reserva {
 
 
 	/**
-	 * @param emailCliente the emailCliente to set
+	 * Metodo set de emailCliente de la clase Reserva
+	 * @param emailCliente
 	 */
 	public void setEmailCliente(String emailCliente) {
 		this.emailCliente = emailCliente;
@@ -44,61 +73,68 @@ public class Reserva {
 
 
 	/**
-	 * @return the idRserva
+	 * Metodo get de la idReserva de la clase Reserva
+	 * @return idReserva : String
 	 */
-	public String getIdRserva() {
-		return idRserva;
+	public String getIdReserva() {
+		return idReserva;
 	}
 
 
 
 	/**
-	 * @param idRserva the idRserva to set
+	 * Metodo set de IdReserva de la clase Reserva
+	 * @param idReserva
 	 */
-	public void setIdRserva(String idRserva) {
-		this.idRserva = idRserva;
+	public void setIdReserva(String idReserva) {
+		this.idReserva = idReserva;
 	}
 
 
 
 	/**
-	 * @return the fechaInicio
+	 * Metodo get de FechaInicio de la clase Reserva
+	 * @return fechaInicio : String
 	 */
-	public Date getFechaInicio() {
+	public String getFechaInicio() {
 		return fechaInicio;
 	}
 
 
 
 	/**
-	 * @param fechaInicio the fechaInicio to set
+	 * Metodo set de FechaInicio de la clase Reserva
+	 * @param fechaInicio
 	 */
-	public void setFechaInicio(Date fechaInicio) {
+	public void setFechaInicio(String fechaInicio) {
 		this.fechaInicio = fechaInicio;
 	}
 
 
 
 	/**
-	 * @return the fechaExtraccion
+	 * Metodo get de FechaExtraccion de la clase Reserva
+	 * @return fechaExtraccion : String
 	 */
-	public Date getFechaExtraccion() {
+	public String getFechaExtraccion() {
 		return fechaExtraccion;
 	}
 
 
 
 	/**
-	 * @param fechaExtraccion the fechaExtraccion to set
+	 * Metodo set de FechaExtraccion de la clase Reserva
+	 * @param fechaExtraccion
 	 */
-	public void setFechaExtraccion(Date fechaExtraccion) {
+	public void setFechaExtraccion(String fechaExtraccion) {
 		this.fechaExtraccion = fechaExtraccion;
 	}
 
 
 
 	/**
-	 * @return the reservaFinalizada
+	 * Metodo get de reservaFinalizada de la clase Reserva
+	 * @return reservaFinalizada : Boolean
 	 */
 	public Boolean getReservaFinalizada() {
 		return reservaFinalizada;
@@ -107,7 +143,8 @@ public class Reserva {
 
 
 	/**
-	 * @param reservaFinalizada the reservaFinalizada to set
+	 * Metodo set de reservaFinalizada de la clase Reserva
+	 * @param reservaFinalizada
 	 */
 	public void setReservaFinalizada(Boolean reservaFinalizada) {
 		this.reservaFinalizada = reservaFinalizada;
@@ -116,7 +153,8 @@ public class Reserva {
 
 
 	/**
-	 * @return the incidencia
+	 * Metodo get de incidencia de la clase Reserva
+	 * @return incidencia : Boolean
 	 */
 	public Boolean getIncidencia() {
 		return incidencia;
@@ -125,7 +163,8 @@ public class Reserva {
 
 
 	/**
-	 * @param incidencia the incidencia to set
+	 * Metodo set de incidencia de la clase Reserva
+	 * @param incidencia
 	 */
 	public void setIncidencia(Boolean incidencia) {
 		this.incidencia = incidencia;
@@ -134,7 +173,8 @@ public class Reserva {
 
 
 	/**
-	 * @return the descripciónIncidencia
+	 * Metodo get de descripcionIncidencia de la clase Reserva
+	 * @return descripcionIncidencia : String
 	 */
 	public String getDescripciónIncidencia() {
 		return descripciónIncidencia;
@@ -143,6 +183,7 @@ public class Reserva {
 
 
 	/**
+	 * Metodo set de descripcionIncidencia de la claseReserva
 	 * @param descripciónIncidencia the descripciónIncidencia to set
 	 */
 	public void setDescripciónIncidencia(String descripciónIncidencia) {
@@ -152,12 +193,69 @@ public class Reserva {
 
 
 	@Override
-	public String toString() {
-		return "Reserva [emailCliente=" + emailCliente + ", idRserva=" 
-				+ idRserva + ", fechaInicio=" + fechaInicio+ ", fechaExtraccion=" + fechaExtraccion 
+	public String toString() {	
+		return "Reserva [emailCliente=" + emailCliente + ", idReserva=" 
+				+ idReserva+ ", fechaInicio=" + fechaInicio+ ", fechaExtraccion=" + fechaExtraccion 
 				+ ", reservaFinalizada=" + reservaFinalizada + ", incidencia="
-				+ incidencia + ", descripciónIncidencia=" + descripciónIncidencia + "]";
+				+ incidencia +", descripcionIncidencia = " + descripciónIncidencia + "]";
 	}
+
+
+
+	/**
+	 * Serializa una linea traida desde el gestor de archivos para su cargado
+	 * @param linea : String
+	 * @return Reserva
+	 * @throws PersistenciaException
+	 */
+	public static Reserva serializeReserva(String linea) throws PersistenciaException {
+		String trozos[] = linea.split(";");
+		
+		if(trozos.length != 8) {
+			throw new PersistenciaException("Linea mal formateada");
+		}
+		
+		String emailCliente = trozos[1];
+		String id = trozos[2];
+		String fechaInicio = trozos[3];
+		String  fechaExtraccion = trozos[4];
+		Boolean reservaFinalizada = comprobarBooleano(trozos[5]);
+		Boolean incidencia = comprobarBooleano(trozos[6]);
+		String descripcionIncidencia = trozos[7];
+		return new Reserva(emailCliente,id,fechaInicio,fechaExtraccion,
+							reservaFinalizada,incidencia,descripcionIncidencia);
+	}
+
+
+	/**
+	 * Procesa un boolean escrito en String para reconvertilo a su valor en boolean real
+	 * @param booleano : String
+	 * @return Boolean
+	 * @throws PersistenciaException
+	 */
+	private static Boolean comprobarBooleano(String booleano) throws PersistenciaException {
+		String texto = booleano.toLowerCase();
+		if(texto.compareTo("true") == 0) {
+			return true;
+		}else if(texto.compareTo("false") == 0) {
+			return false;
+		}
+		throw new PersistenciaException("ERROR booleano mal escrito");
+	}
+
+
+	/**
+	 * Serializa una reserva y la transforma en String para su guardado
+	 * @param r : Reserva
+	 * @return String
+	 */
+	public static String serializeReserva(Reserva r) {
+		return 3 + ";" + r.getEmailCliente() + ";" + r.getIdReserva() 
+				+ ";" + r.getFechaInicio() + ";" + r.getFechaExtraccion() + ";" 
+				+ r.getReservaFinalizada() + ";" + r.getIncidencia() + ";" 
+				+ r.getDescripciónIncidencia() +"\n";
+	} 
+
 	
 	
 

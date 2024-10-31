@@ -6,11 +6,16 @@ public class Email {
 	
 	private String email;
 
+	/**
+	 * Constructor de 1 parametro de la clase Email
+	 * @param email
+	 */
 	public Email(String email) {
 		this.email = email;
 	}
 
 	/**
+	 * Metodo get de la clase Email
 	 * @return the email
 	 */
 	public String getEmail() {
@@ -37,7 +42,7 @@ public class Email {
 	}
 
 	/**
-	 * @param email the email to set
+	 * Metodo set de la clase email
 	 */
 	public void setEmail(String email) {
 		this.email = email;

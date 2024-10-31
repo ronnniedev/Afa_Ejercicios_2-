@@ -1,0 +1,12 @@
+2024-10-31T17:08:10.775378700 -  Linea 2 : Error categoria mal hecha, debe ser un digito y un solo caracter
+2024-10-31T17:08:10.781362600 -  Linea 4 : Error categoria mal hecha, debe ser un digito y un solo caracter
+2024-10-31T17:08:10.781362600 -  Linea 5 : Linea mal formateada
+2024-10-31T17:08:10.782360100 -  Linea 7 : ERROR Cliente ya figura en base de datos
+2024-10-31T17:08:10.782360100 -  Linea 12 : Error categoria mal hecha, debe ser un digito y un solo caracter
+2024-10-31T17:08:10.782360100 -  Linea 13 : Error categoria mal hecha, debe ser un digito y un solo caracter
+2024-10-31T17:08:10.784354700 -  Linea 14 : La consigna 3 no existe
+2024-10-31T17:08:10.784354700 -  Linea 16 : Error Consigna ya en la base de datos
+2024-10-31T17:08:10.784354700 -  Linea 17 : Error categoria mal hecha, debe ser un digito y un solo caracter
+2024-10-31T17:08:10.784354700 -  Linea 20 : No se encuentra el cliente especificado
+2024-10-31T17:08:10.784354700 -  Linea 21 : No se encuentra el cliente especificado
+2024-10-31T17:08:10.784354700 -  Linea 22 : No se encuentra el cliente especificado

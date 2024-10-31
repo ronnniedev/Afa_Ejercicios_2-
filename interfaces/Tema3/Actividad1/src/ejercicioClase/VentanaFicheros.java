@@ -10,79 +10,74 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class VentanaFicheros extends Frame implements WindowListener,ActionListener{
+public class VentanaFicheros extends Frame {
 	
 	private Button bVentana,bFichero;
 	private TextField tNombre,tApellidos;
 	private Label lNombre,lApellidos;
 	
+	
+
+	public Button getbVentana() {
+		return bVentana;
+	}
+
+
+
+	public Button getbFichero() {
+		return bFichero;
+	}
+
+
+
+	public TextField gettNombre() {
+		return tNombre;
+	}
+
+
+
+	public TextField gettApellidos() {
+		return tApellidos;
+	}
+
+
+
+	public Label getlNombre() {
+		return lNombre;
+	}
+
+
+
+	public Label getlApellidos() {
+		return lApellidos;
+	}
+
+
 
 	public VentanaFicheros(String string) {
 		super(string);
-		this.setLayout(new GridLayout(2,5));
+		this.setLayout(new GridLayout(3,2)); // y es el 3 y x es el 2
 		this.setBounds(400, 100, 300, 200);
-		this.setVisible(true);
 		
+		// this.setSize(); se puede usar para meter el tamaño sin meter la posicion
 		
+		this.lNombre = new Label("Nombre: ");
+		this.lApellidos = new Label("Apellidos: ");
+		this.bVentana = new Button("Ventana");
+		this.bFichero = new Button("Fichero");
+		this.tNombre = new TextField("");
+		this.tApellidos = new TextField("");
 		
-		this.addWindowListener(this);
-	}
-
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		this.add(lNombre);
+		this.add(tNombre);
+		this.add(lApellidos);
+		this.add(tApellidos);
+		this.add(bVentana);
+		this.add(bFichero);
 		
-	}
-
-
-	@Override
-	public void windowOpened(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void windowClosing(WindowEvent e) {
-		System.exit(0);
-		
-		
-	}
-
-
-	@Override
-	public void windowClosed(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void windowIconified(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void windowDeiconified(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void windowActivated(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
-	public void windowDeactivated(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
+		this.addWindowListener(new GestorVentana(this));
+		this.bVentana.addActionListener(new GestorBotones(this));
+		this.bFichero.addActionListener(new GestorBotones(this));
 	}
 
 }

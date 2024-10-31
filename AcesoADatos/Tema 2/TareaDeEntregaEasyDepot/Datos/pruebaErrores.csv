@@ -1,0 +1,10 @@
+--Clientes--
+categoria;nombre;apellidos;numero;email;contraseña;numeroReservas;puntosTienda
+1;Marta;Martínez;678748433;email15;pass15;4;50
+1;Marta;García;696183565;email14;pass14;0;62
+1;Luis;Ruiz;661588533;email11;pass11;2;20
+--Consignas--
+categoria;id;direccion
+2;1;Calle Teodoro Cuesta
+--Reservas--
+categoria;emailCliente;id;fechaInicio;fechaFinal;ReservaFinalizada;Incidencia;DescripcionIncidencia

@@ -1,11 +1,14 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -22,8 +25,8 @@ public class Saludo extends AppCompatActivity {
 
         Bundle b = this.getIntent().getExtras();
 
-        // tSaludo = (TextView) findViewById(R.id.tSaludo);
-        // tSaludo.setText(b.get("Nombre").toString());
+        tSaludo = (TextView) findViewById(R.id.tSaludo);
+        tSaludo.setText(b.get("Nombre").toString());
 
         botonAccion.setOnClickListener(new View.OnClickListener() {
             @Override

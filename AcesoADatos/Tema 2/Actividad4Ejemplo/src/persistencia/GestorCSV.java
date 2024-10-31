@@ -11,8 +11,8 @@ import java.util.List;
 
 import javax.security.auth.login.LoginException;
 
+import persistencia.Loggerfichero;
 import logica.Inmobiliaria;
-import excepciones.Loggerfichero;
 import excepciones.LogicaException;
 import excepciones.PersistenciaException;
 import modelo.Empleado;
