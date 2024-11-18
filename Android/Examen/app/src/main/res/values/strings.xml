@@ -2,5 +2,5 @@
     <string name="app_name">Test</string>
     <string name="bSaludo">Say hi</string>
     <string name="eSaludo">Tell me your name</string>
-    <string name="email">Go to email</string>
+    <string name="imagen">Select image</string>
 </resources>

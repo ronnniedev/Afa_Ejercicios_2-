@@ -1,22 +1,24 @@
-package Modelo;
+package modelo;
+
+import excepciones.PersistenciaException;
 
 public class Reparacion {
-	
+
 	private int codigo;
-	private String DNI;
+	private String dniMecanico;
 	private String matricula;
 	private String fecha;
 	private double importe;
-	private String descripcionTrabajo;
+	private String descripcion;
 	
-	public Reparacion(int codigo, String dNI, String matricula, String fecha, double importe,
-			String descripcionTrabajo) {
+	public Reparacion(int codigo, String dniMecanico, String matricula, String fecha, double importe,
+			String descripcion) {
 		this.codigo = codigo;
-		this.DNI = dNI;
+		this.dniMecanico = dniMecanico;
 		this.matricula = matricula;
 		this.fecha = fecha;
 		this.importe = importe;
-		this.descripcionTrabajo = descripcionTrabajo;
+		this.descripcion = descripcion;
 	}
 
 	/**
@@ -34,17 +36,17 @@ public class Reparacion {
 	}
 
 	/**
-	 * @return the dNI
+	 * @return the dniMecanico
 	 */
-	public String getDNI() {
-		return DNI;
+	public String getDniMecanico() {
+		return dniMecanico;
 	}
 
 	/**
-	 * @param dNI the dNI to set
+	 * @param dniMecanico the dniMecanico to set
 	 */
-	public void setDNI(String dNI) {
-		DNI = dNI;
+	public void setDniMecanico(String dniMecanico) {
+		this.dniMecanico = dniMecanico;
 	}
 
 	/**
@@ -90,26 +92,46 @@ public class Reparacion {
 	}
 
 	/**
-	 * @return the descripcionTrabajo
+	 * @return the descripcion
 	 */
-	public String getDescripcionTrabajo() {
-		return descripcionTrabajo;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
 	/**
-	 * @param descripcionTrabajo the descripcionTrabajo to set
+	 * @param descripcion the descripcion to set
 	 */
-	public void setDescripcionTrabajo(String descripcionTrabajo) {
-		this.descripcionTrabajo = descripcionTrabajo;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 	@Override
 	public String toString() {
-		return "Reparacion [codigo=" + codigo + ", DNI Mecanico=" + DNI + 
-				", matricula=" + matricula + ", fecha=" + fecha + ", importe=" + importe 
-				+ ", descripcionTrabajo=" + descripcionTrabajo + "]";
+		return "Reparacion [codigo=" + codigo + ", dniMecanico=" + dniMecanico + ", matricula=" 
+				+ matricula + ", fecha="+ fecha + ", importe=" + importe + ", descripcion=" 
+				+ descripcion + "]";
 	}
-	
+
+	public static Reparacion serializeReparacion(String linea) throws PersistenciaException {
+		String trozos[] = linea.split("@");
+		if(trozos.length != 7) {
+			throw new PersistenciaException("ERROR a esta reparacion le sobra o falta un atributo");
+		}
+		
+		int codigo = Integer.parseInt(trozos[1]);
+		String dniMecanico = trozos[2];
+		String matricula = trozos[3];
+		String fecha = trozos[4];
+		double importe = Double.parseDouble(trozos[5]);
+		String descripcion = trozos[6];
+		
+		return new Reparacion(codigo,dniMecanico,matricula,fecha,importe,descripcion);
+	}
+
+	public static String serializeReparacion(Reparacion r) {
+		return "3" + "@" + r.getCodigo() + "@" + r.getDniMecanico() + "@" + r.getMatricula() + "@" +
+				r.getFecha() + "@" + r.getImporte() + "@" + r.getDescripcion() + "\n";
+	}
 	
 	
 	

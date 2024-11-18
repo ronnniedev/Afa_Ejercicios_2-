@@ -1,7 +1,11 @@
-package Excepciones;
+package excepciones;
 
 public class ExcepcionLogica extends Exception {
-	public ExcepcionLogica(String sms) {
-		super(sms);
+
+	public ExcepcionLogica(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
 	}
+
+	
 }

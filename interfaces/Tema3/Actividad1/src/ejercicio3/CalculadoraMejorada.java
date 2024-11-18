@@ -74,7 +74,7 @@ public class CalculadoraMejorada extends Frame {
 		this.btnRestar.addActionListener(new GestionBotones(this));
 		this.btnMultiplicar.addActionListener(new GestionBotones(this));
 		this.btnDividir.addActionListener(new GestionBotones(this));
-
+	
 	}
 
 	public Label getLblTitulo() {

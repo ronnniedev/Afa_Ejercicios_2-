@@ -1,0 +1,21 @@
+1	Low Cost	Alicante -- Barcelona -- Madrid -- Sevilla -- M�laga
+1	Spanair	Madrid -- Barcelona
+1	Air Europa	Tenerife -- Lanzarote
+1	Iberia	Barcelona -- Madrid
+2	JK628	Spanair	M�laga	22:15	23:10	C
+2	JK630	Spanair	Palma Mallorca	18:35	21:05	A
+2	IB221	Iberia	Madrid	10:20	12:05	G
+2	IB218	Iberia	Barcelona	16:20	17:15	C
+2	IB217	Iberia	Madrid	14:15	15:30	D
+2	IB216	Iberia	Madrid	12:30	13:40	D
+3	JK628	44.444.444	VALDES FERNANDEZ, LAZARO	c/Vicente Ferrer 13-2�D	985131414	Business
+3	JK628	11.111.111	GARCIA CASTRO, MARIA	c/Alas Clarin 10-2�A	985131515	Turista
+3	JK628	88.888.888	DIAZ GARCIA, MARCOS	c/Fruela 7	985348946	Primera
+3	IB218	33.333.333	GALAN PEREZ, ANA	c/perez Ayala 5-3�A	985231415	Turista
+3	IB218	18.181.818	DIAZ PEREZ, SANTIAGO	c/Perez Salas 2-3�A	985922367	Turista
+3	IB218	15.151.515	GONZALEZ PEREZ, ARTURO	c/Perez Ayala 25-3�A	985925167	Turista
+3	IB217	99.999.999	LPEZ GARCIA, MANUEL	c/Fray Ceferino 10	985128456	Turista
+3	IB217	13.131.313	ALONSO DIAZ, MARIA	c/Uria 12-4D	985984673	Turista
+3	IB216	66.666.666	CASAS SANZ, PILAR	c/Calvo Sotelo 25-4I	985171234	Business
+3	IB216	14.141.414	FERNANDEZ CASAS, CARMEN	c/Unamuno 10-4I	985652837	Business
+3	IB216	17.171.717	CASAS SANZ, PEDRO	c/Calvo Sotelo 25-4I	985171234	Business

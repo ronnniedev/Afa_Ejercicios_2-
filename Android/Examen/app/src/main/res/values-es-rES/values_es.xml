@@ -3,5 +3,5 @@
     <string name="app_name">Examen</string>
     <string name="bSaludo">Di hola</string>
     <string name="eSaludo">Dime tu nombre</string>
-    <string name="email">Ir al email</string>
+    <string name="imagen">Selecciona la imagen</string>
 </resources>

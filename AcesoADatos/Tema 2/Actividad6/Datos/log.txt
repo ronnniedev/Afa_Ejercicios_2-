@@ -1,0 +1,7 @@
+
+2024-11-05T12:51:03.340022100 - Linea : 0 ERROR cabeza de linea mal formada
+2024-11-05T12:57:36.947636800 - Linea : 0 ERROR cabeza de linea mal formada
+2024-11-05T12:57:36.961630200 - Linea : 1 ERROR cabeza de linea mal formada
+2024-11-05T12:57:36.962930800 - Linea : 46 ERROR linea vacia
+2024-11-05T12:57:36.973420200 - Linea : 106 ERROR a esta reparacion le sobra o falta un atributo
+2024-11-05T12:57:36.973420200 - Linea : 106 ERROR a esta reparacion le sobra o falta un atributo

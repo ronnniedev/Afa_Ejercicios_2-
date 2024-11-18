@@ -1,0 +1,35 @@
+1	Low Cost	Alicante -- Barcelona -- Madrid -- Sevilla -- Málaga		
+1	Spanair	Madrid -- Barcelona
+1	Air Europa	Tenerife -- Lanzarote	
+1	Iberia	Barcelona -- Madrid	
+9	Air Nostrum	Paris -- Bruselas -- Barcelona -- Madrid	
+2	VY285	Low Cost	11:50	13:15	A
+2	JK628	Spanair	Málaga	22:15	23:10	C
+7	UX502	Air Europa	Madrid	20:45	21:40	B
+2	IB221	Iberia	Madrid	10:20	12:05	G
+2	JK630	Spanair	Palma Mallorca	18:35	21:05	A
+2	IB218	Iberia	Barcelona	16:20	17:15	C
+2	IB217	Iberia	Madrid	14:15	15:30	D
+
+2	AU210	Air Nostrum	Barcelona	07:20	10:30	A	
+2	IB216	Iberia	Madrid	12:30	13:40	D
+9	VY105	Low Cost	Madrid	14:15	15:20	D
+2	AU320	Air Nostrum	Palma Mallorca	08:25	10:15	A
+3	IB218	33.333.333	GALAN PEREZ, ANA	c/perez Ayala 5-3ºA	985231415	Turista
+3	JK628	44.444.444	VALDES FERNANDEZ, LAZARO	c/Vicente Ferrer 13-2ºD	985131414	Business
+3	AU320	55.555.555	RODRIGUEZ PEREZ, ANA	c/Lago Enol 23	985131214	Turista
+3	IB216	66.666.666	CASAS SANZ, PILAR	c/Calvo Sotelo 25-4I	985171234	Business
+3	JK628	11.111.111	GARCIA CASTRO, MARIA	c/Alas Clarin 10-2ºA	985131515	Turista
+3	VY105	22.222.222	ALVAREZ PEREZ, RAMON	c/Lago Enol 7	985221346	Turista
+3	AU320	77.777.777	ALVAREZ DIAZ, IVAN	c/Fruela 15-5D	985123456	Turista
+3	IB216	14.141.414	FERNANDEZ CASAS, CARMEN	c/Unamuno 10-4I	985652837	Business	
+3	JK628	88.888.888	DIAZ GARCIA, MARCOS	c/Fruela 7	985348946	Primera
+3	IB217	99.999.999	LPEZ GARCIA, MANUEL	c/Fray Ceferino 10	985128456	Turista
+3	AU320	12.121.212	ALVAREZ RODRIGUEZ, ANA	c/Fruela 10	985345271	Turista
+
+3	IB216	17.171.717	CASAS SANZ, PEDRO	c/Calvo Sotelo 25-4I	985171234	Business
+3	IB217	13.131.313	ALONSO DIAZ, MARIA	c/Uria 12-4D	985984673	Turista
+3	IB218	18.181.818	DIAZ PEREZ, SANTIAGO	c/Perez Salas 2-3ºA	985922367	Turista
+3	AU320	16.161.616	RODRIGUEZ PEREZ, SUSANA	c/Lago Enol 23	985131214	Turista
+3	IB218	15.151.515	GONZALEZ PEREZ, ARTURO	c/Perez Ayala 25-3ºA	985925167	Turista
+

@@ -1,27 +1,40 @@
-package Interfaz;
+package interfaz;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import Excepciones.ExcepcionLogica;
-import Logica.Taller;
-import Modelo.Vehiculo;
+import excepciones.ExcepcionLogica;
+import excepciones.LogicaException;
+import excepciones.PersistenciaException;
+import logica.Taller;
+import modelo.Vehiculo;
+
 
 public class Main {
 	
 	Taller taller;
 	
-	public Main() throws ExcepcionLogica {
-		String ficheroDatos="";
-		taller=new Taller(ficheroDatos);
-		System.out.println(taller.toString());
-		int opcion=menu();
-		while(opcion!=0){
-			procesarOpcion(opcion);
-			opcion=menu();
-		}
-		System.out.println("\n\nFIN\n");
-		String ficheroSalida="";
-		taller.guardarDatos(ficheroSalida);
+	public Main(){
+		String ficheroDatos="Datos\\entrada.txt";
+		try {
+			taller=new Taller(ficheroDatos);
+			System.out.println(taller.toString());
+			int opcion=menu();
+			while(opcion!=0){
+				try {
+					procesarOpcion(opcion);
+				} catch (ExcepcionLogica e) {
+					System.out.println(e.getMessage());
+				}
+				opcion=menu();
+			}
+			System.out.println("\n\nFIN\n");
+			String ficheroSalida="Datos\\salida.txt";
+			taller.guardarDatos(ficheroSalida);
+		} catch (FileNotFoundException e) {
+			System.out.println("ERROR al cargar el archivo, abortando apertura");
+		} 
+		
 	}
 	
 	private int menu() {
@@ -65,20 +78,20 @@ public class Main {
 		}
 	}
 
+	
+	
+	
 	private void listarVehiculos() {
 		System.out.println("\nLISTA DE VEH�CULOS: \n");
-		taller.listarVehiculos();
 		for(int i=0; i<taller.listarVehiculos().size(); i++){
 			Vehiculo v=(Vehiculo)taller.listarVehiculos().get(i);
-			String cadena=v.getMatricula()+"\t"+v.getMarcaModelo()+"\t"+v.getTipo()
-			+"\t"+v.getNombreApellidos()+"\t"+v.getTelefono()+"\n";
+			String cadena=v.getMatricula()+"\t"+v.getTipo()+"\t"+v.getTipo()+"\t"+v.getNombre()+"\t"+v.getTelefono()+"\n";
 			System.out.println(cadena);
 		}
 	}
 	
 	private void listarMecanicosConReparaciones() {
 		System.out.println("\nLISTA DE Mecanicos: \n");
-		taller.listarMecanicos();
 		System.out.println(taller.listarMecanicos());
 	}
 
@@ -96,7 +109,7 @@ public class Main {
 		String matricula=teclado.next();
 		System.out.println("Dni del mec�nico: ");
 		String DniMecanico=teclado.next();
-		System.out.println("C�digo: ");
+		System.out.println("Codigo: ");
 		int codigo=teclado.nextInt();
 		taller.eliminarReparacion(matricula, DniMecanico, codigo);
 		System.out.println("\nREPARACI�N ELIMINADA\n");

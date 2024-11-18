@@ -21,7 +21,7 @@ public class Principal {
 	private static Sistema sistema = new Sistema();
 	private static Scanner keyboard = new Scanner(System.in);
 	private static GestorPersistencia gestor;
-
+	
 	public static void main(String[] args) {
 		
 		try {
@@ -31,7 +31,7 @@ public class Principal {
 		}
 
 	}
-
+	
 	/**
 	 * Ejecuta la funcion principal del sistema y gestiona toda las actividades del mismo
 	 * @throws IOException
@@ -60,6 +60,7 @@ public class Principal {
 
 	}
 
+	
 	/**
 	 * Procesa la opcion escogida 
 	 * @param opcion : int

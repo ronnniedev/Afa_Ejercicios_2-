@@ -1,0 +1,10 @@
+
+2024-11-04T18:15:30.675737 - Linea 10: Error linea mal categorizada
+2024-11-04T18:15:30.684727400 - Linea 49: Error el numero de categoria debe estar entre el 1 y el 4
+2024-11-04T18:15:30.684727400 - Linea 50: ERROR linea que tiene numero erroneo de categorias
+2024-11-04T18:17:34.036257400 - Linea 10: ERROR no existe el codigo de la zona especificado
+2024-11-04T18:17:34.044618300 - Linea 21: ERROR no existe el codigo del hotel especificado
+2024-11-04T18:17:34.045615400 - Linea 31: ERROR no existe el codigo del hotel especificado
+2024-11-04T18:17:34.046613 - Linea 48: Error el numero de categoria debe estar entre el 1 y el 4
+2024-11-04T18:17:34.046613 - Linea 49: ERROR linea que tiene numero erroneo de categorias
+2024-11-04T18:17:34.047609800 - Linea 55: ERROR no existe el codigo de la habitacion especificado

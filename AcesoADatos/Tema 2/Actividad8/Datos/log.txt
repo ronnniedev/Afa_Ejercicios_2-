@@ -1,0 +1,29 @@
+
+2024-11-17T13:26:11.285290100 - Linea 5 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:26:11.295290200 - Linea 6 Error falta o sobra un atributo en este vuelo
+2024-11-17T13:26:11.296289500 - Linea 8 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:26:11.296289500 - Linea 13 Error linea vacia
+2024-11-17T13:26:11.296289500 - Linea 14 Error compañia no encontrada
+2024-11-17T13:26:11.296289500 - Linea 16 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:26:11.296289500 - Linea 17 Error compañia no encontrada
+2024-11-17T13:26:11.297290800 - Linea 20 Error vuelo no existe
+2024-11-17T13:26:11.297290800 - Linea 23 Error vuelo no existe
+2024-11-17T13:26:11.297290800 - Linea 24 Error vuelo no existe
+2024-11-17T13:26:11.297290800 - Linea 28 Error vuelo no existe
+2024-11-17T13:26:11.297290800 - Linea 29 Error linea vacia
+2024-11-17T13:26:11.298291800 - Linea 33 Error vuelo no existe
+2024-11-17T13:26:11.298291800 - Linea 35 Error linea vacia
+2024-11-17T13:32:41.206692 - Linea 5 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:32:41.216693700 - Linea 6 Error falta o sobra un atributo en este vuelo
+2024-11-17T13:32:41.216693700 - Linea 8 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:32:41.216693700 - Linea 13 Error linea vacia
+2024-11-17T13:32:41.216693700 - Linea 14 Error compañia no encontrada
+2024-11-17T13:32:41.216693700 - Linea 16 Error el numero de categoria debe estar entre el 1 y el 3
+2024-11-17T13:32:41.216693700 - Linea 17 Error compañia no encontrada
+2024-11-17T13:32:41.217692700 - Linea 20 Error vuelo no existe
+2024-11-17T13:32:41.217692700 - Linea 23 Error vuelo no existe
+2024-11-17T13:32:41.217692700 - Linea 24 Error vuelo no existe
+2024-11-17T13:32:41.217692700 - Linea 28 Error vuelo no existe
+2024-11-17T13:32:41.217692700 - Linea 29 Error linea vacia
+2024-11-17T13:32:41.217692700 - Linea 33 Error vuelo no existe
+2024-11-17T13:32:41.217692700 - Linea 35 Error linea vacia

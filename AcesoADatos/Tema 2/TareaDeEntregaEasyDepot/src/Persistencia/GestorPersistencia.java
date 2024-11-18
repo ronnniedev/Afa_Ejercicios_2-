@@ -22,6 +22,7 @@ public class GestorPersistencia {
 	
 	private Sistema sistema;
 	
+	
 	/**
 	 * Constructor de un parametro de la clase GgestorPersitencia
 	 * @param sistema : Sistema

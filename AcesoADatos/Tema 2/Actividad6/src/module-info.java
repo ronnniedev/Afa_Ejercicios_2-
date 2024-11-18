@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Examen_Taller {
+module Actividad6 {
 }

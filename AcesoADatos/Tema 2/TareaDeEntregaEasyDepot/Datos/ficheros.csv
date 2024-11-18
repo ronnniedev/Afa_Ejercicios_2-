@@ -1,11 +1,11 @@
 --Clientes--
 categoria;nombre;apellidos;numero;email;contraseña;numeroReservas;puntosTienda
 1;Diego ;De los Rios;123456789;email4;akjdhasd;0;0
-1;Luis;Ruiz;661588533;email3;pass11;5;0
-1;Marta;García;696183565;email2;pass14;5;0
-1;Marta;Martínez;678748433;email1;pass15;5;0
+1;Luis;Ruiz;661588533;email3;pass11;8;0
+1;Marta;García;696183565;email2;pass14;8;0
+1;Marta;Martínez;678748433;email1;pass15;8;0
 1;Morgane ;Valiente;123456787;email6;sajdhkas;0;0
-1;Veronica;Gonzalez Bravo;123456789;email5;womani98;5;10
+1;Veronica;Gonzalez Bravo;123456789;email5;womani98;8;10
 --Consignas--
 categoria;id;direccion
 2;1;Calle Teodoro Cuesta

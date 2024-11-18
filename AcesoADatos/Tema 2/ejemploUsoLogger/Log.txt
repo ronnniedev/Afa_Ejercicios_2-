@@ -1,0 +1,2 @@
+nov 07, 2024 1:07:25 P. M. ClaseLog.MiLog guardarMensaje
+INFORMACIÓN: Func Main 2
